@@ -11,7 +11,7 @@ if (wishes.length === 0) {
 wishes.forEach(function (wish) {
     productContainer.innerHTML += `
         <div class="product">
-            <div class="icon"><i class="fa fa-heart></i></div>
+            <div class="icon"><i class="fa fa-heart"></i></div>
             <h3>${wish.name}</h3>
             <p>Price: $${wish.price}</p>
         </div>`;

@@ -10,7 +10,6 @@ export function renderProducts(products) {
     products.forEach(function (product) {
 
         //Check if an element is marked as a wish (in the wishitems)
-
         const doesObjectExist = wishes.find(function (wish) {
             console.log(wish);
 

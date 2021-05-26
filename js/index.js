@@ -40,6 +40,7 @@ function handleClick() {
 
 	const id = this.dataset.id;
 	const name = this.dataset.name;
+	const price = this.dataset.price;
 
 	const currentWishes = getExistingWishitems();
 	// console.log(currentWishes);
@@ -50,7 +51,7 @@ function handleClick() {
 
 	// console.log("productExists", productExists);
 	if (productExists === undefined) {
-		const product = { id: id, name: name };
+		const product = { id: id, name: name, price: price };
 		currentWishes.push(product); //push the product into the new array
 		saveWishes(currentWishes); //Save the value of the current wishes
 	} else {
