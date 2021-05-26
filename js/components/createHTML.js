@@ -27,7 +27,7 @@ export function renderProducts(products) {
         // console.log(product);
         productContainer.innerHTML += `
         <div class="product">
-            <div class="icon"><i class="${cssClass} fa-heart" data-id="${product.id}" data-name="${product.name}"></i></div>
+            <div class="icon"><i class="${cssClass} fa-heart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}"></i></div>
             <h3>${product.name}</h3>
             <p>Price: $${product.price}</p>
         </div>`;
